@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+# No need to detect anything. Always detected.
+echo "Clean Cache"
+exit 0
