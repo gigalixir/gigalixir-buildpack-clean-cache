@@ -1,6 +1,4 @@
 #!/usr/bin/env bash
-env
-
 # bin/compile <build-dir> <cache-dir> <env-dir>
 
 ### Configure environment
@@ -18,7 +16,7 @@ cache_dir=$(cd $2 && pwd)
 env_dir=$(cd $3 && pwd)
 
 if [ "$GIGALIXIR_SHOULD_CLEAN_CACHE" = "true" ]; then
-  echo "Cleaning cache"
+  echo "Cleaning cache."
   cd $cache_dir
   rm -rf *
 else
