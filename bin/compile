@@ -15,7 +15,7 @@ build_dir=$(cd $1 && pwd)
 cache_dir=$(cd $2 && pwd)
 env_dir=$(cd $3 && pwd)
 
-if [ "$GIGALIXIR_SHOULD_CLEAN_CACHE" = "true" ]; then
+if [ "$GIGALIXIR_SHOULD_CLEAN_CACHE" = "True" ]; then
   echo "Cleaning cache."
   cd $cache_dir
   rm -rf *
